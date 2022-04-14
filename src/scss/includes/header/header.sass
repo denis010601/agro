@@ -1,0 +1,139 @@
+.header
+    height: 101px
+    
+    &__container
+        display: flex
+    &__logo
+        height: 101px
+    &__sub-menu
+        display: none
+        position: absolute
+        background: #EFF7FC
+        width: 226px
+        left: -32px
+        top: 56px
+        padding:  12px 14px 20px 16px
+        border-top: 1px solid #C8D4DC
+        border-radius: 0 0 6px 6px 
+        &-item
+            padding: 7px 0 8px 14px
+            border-bottom: 1px solid #C8D4DC
+            line-height: 21xpx
+            &:last-child
+                border-bottom: 0px
+        a
+            font-size: 16px
+            font-family: 'Ptsans'
+            font-weight: 400
+            color: $basik
+            
+
+    &__left-side
+        display: flex
+    &__name
+        padding-top: 17px
+        &-top
+            font-family: 'Ptsans'
+            font-weight: 700
+            font-size: 16px
+            line-height: 21px
+            color: $basik
+            text-transform: uppercase
+            padding-left: 4px
+        &-sub
+            padding-top: 4px
+            font-family: 'Intro'
+            color: $logo
+            text-transform: uppercase
+            font-size: 24px
+            line-height: 24px
+            font-weight: 400
+    &__menu
+        display: flex
+        justify-content: space-between
+        font-family: 'Ptsans'
+        font-weight: 400
+        font-size: 16px
+        height: 101px
+        align-items: center
+        line-height: 21px
+        margin-left: 71px
+        a 
+            color: $basik
+        &-item
+            position: relative
+            margin-left: 71px
+            cursor: pointer
+            &::before
+                content: ""
+                position: absolute
+                top: 100%
+                left: -30px
+                height: 40px
+                width: 226px
+            
+            &:first-child
+                margin-left: 0
+            &:last-child
+                margin-left: 55px
+            &:hover
+                img
+                    transform: rotate(180deg)
+                .header__sub-menu
+                    display: block
+            img
+                height: 12px
+                width: 12px
+                margin-left: 8px
+                fill: $basik
+    &__social
+        display: flex
+        justify-content: space-between
+        margin-bottom: 6px
+        &-item
+            width: 20px
+            height: 20px     
+            &:hover
+                fill: $basik
+    &__right-side
+        margin-left: 211px
+        display: flex
+        width: 311px
+        height: 101px
+        justify-content: space-between
+        padding-top: 6px
+        justify-items: end
+    &__contact
+        width: 244px
+    &__search
+        margin-top: 30px
+        border-radius: 100%
+        border: 2px solid $group
+        width: 24px
+        height: 24px
+        background-image: url("../img/search/search.svg") no-repeat
+        background-position: center
+       
+        &:focus, &:active
+            background-position: 101% center
+            width: 200px
+            border-radius: 15px
+            margin-left:-176px
+    
+    &__message
+        display: flex
+        height: 29px
+        align-items: center
+        justify-content: space-between
+        &-item
+            display: flex
+            img
+                width: 24px
+                margin-right: 8px
+            a
+                font-family: 'Ptsans'
+                font-weight: 400
+                display: flex
+                align-items: center
+                font-size: 18px
+                color: $basik
